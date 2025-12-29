@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name | Music & AI</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background:#0b0b0f; color:#f3f3f3; }
+    header { padding: 48px 20px; max-width: 980px; margin: 0 auto; }
+    h1 { font-size: 36px; margin: 0 0 8px; }
+    p { line-height: 1.7; color:#cfcfe6; }
+    nav a { margin-right: 14px; color:#9ad; text-decoration:none; }
+    section { max-width: 980px; margin: 0 auto; padding: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 14px; }
+    .card { background:#141421; border:1px solid #22224a; border-radius: 16px; padding: 14px; }
+    .tag { font-size: 12px; color:#9ad; }
+    iframe { width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 12px; }
+    footer { max-width: 980px; margin: 0 auto; padding: 40px 20px; color:#9aa; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>作曲 / ギター / AI作品。YouTubeの楽曲と、AIで作った作品をまとめています。</p>
+    <nav>
+      <a href="#works">Works</a>
+      <a href="#ai">AI Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="works">
+    <h2>🎧 Music (YouTube)</h2>
+    <div class="card">
+      <div class="tag">Latest</div>
+      <iframe
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <p>曲の説明を書く（制作背景、使用機材、テーマなど）</p>
+    </div>
+  </section>
+
+  <section id="ai">
+    <h2>🧠 AI Gallery</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="tag">Artwork</div>
+        <p>AIで作ったジャケット画像（ここに画像を置く or 外部リンク）</p>
+      </div>
+      <div class="card">
+        <div class="tag">Lyrics</div>
+        <p>AI生成した歌詞やコンセプトメモ</p>
+      </div>
+      <div class="card">
+        <div class="tag">Demo</div>
+        <p>AIで作ったデモ音源（YouTube/DriveリンクでもOK）</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📮 Contact</h2>
+    <div class="card">
+      <p>
+        X: @xxxx / Instagram: @xxxx<br/>
+        連絡フォームを置くならGoogleフォームが最短。
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="y"></span> Your Name
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
